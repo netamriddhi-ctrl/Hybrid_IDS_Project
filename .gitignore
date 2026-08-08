@@ -1,12 +1,14 @@
-# Virtual environments
+# Python / Virtual Environment
 venv/
 .venv/
+dataset/venv/
 
 # Python cache
 __pycache__/
 *.pyc
+*.pyo
 
-# Jupyter temporary files
+# Jupyter
 .ipynb_checkpoints/
 
 # VS Code
@@ -14,7 +16,33 @@ __pycache__/
 
 # Logs
 *.log
+*.tmp
 
-# Large datasets
-*.csv
-*.pcap
+# Raw datasets
+dataset/*.csv
+dataset/*.pcap
+dataset/*.pcapng
+
+# Processed data
+dataset/processed/
+
+# NumPy files
+*.npy
+*.npz
+
+# Trained models
+dataset/models/
+*.pkl
+*.joblib
+*.keras
+*.h5
+
+# Final results
+!dataset/results/
+!dataset/results/*.csv
+!dataset/results/*.json
+!dataset/results/*.png
+
+# Figures
+!dataset/figures/
+!dataset/figures/*.png
